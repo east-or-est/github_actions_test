@@ -1,0 +1,27 @@
+name: Test
+
+on:
+
+  # pushした時に実行
+  push:
+  
+  # ワークフローを手動で実行
+  workflow_dispatch:
+
+jobs:
+
+  test-job-name: 
+  
+    # 仮想環境イメージ
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: testtaso
+        run: echo 'テスト'
+      
+      # チェックアウト
+      - uses: actions/checkout@v3
+        with:
+          repository: github_actions_test/hoge
+          path: hoge
+          
