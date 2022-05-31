@@ -19,9 +19,4 @@ jobs:
       - name: testtaso
         run: echo 'テスト'
       
-      # チェックアウト
-      - uses: actions/checkout@v3
-        with:
-          repository: github_actions_test/hoge
-          path: hoge
           
